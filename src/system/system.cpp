@@ -211,7 +211,8 @@ std::uintmax_t SystemOps::FreeSpaceBytes(const std::filesystem::path& path) {
 
 CommandResult SystemOps::RunShell(const std::string& command) {
     int exit_code = 0;
-    return CommandResult{exit_code, CaptureOutput(command, &exit_code)};
+    auto output = CaptureOutput(command, &exit_code);
+    return CommandResult{exit_code, std::move(output)};
 }
 
 bool SystemOps::CommandExists(const std::string& command) {
