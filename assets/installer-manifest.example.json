@@ -1,0 +1,26 @@
+{
+  "version": "0.1.0",
+  "docs_url": "https://chat.rausku.com/docs",
+  "platforms": {
+    "linux-x64": {
+      "installer": {
+        "url": "https://chat.rausku.com/downloads/ircord-installer-linux-x64",
+        "sha256": "replace-with-real-installer-sha256"
+      },
+      "server": {
+        "url": "https://chat.rausku.com/downloads/ircord-server-linux-x64.tar.gz",
+        "sha256": "replace-with-real-server-sha256"
+      }
+    },
+    "linux-arm64": {
+      "installer": {
+        "url": "https://chat.rausku.com/downloads/ircord-installer-linux-arm64",
+        "sha256": "replace-with-real-installer-sha256"
+      },
+      "server": {
+        "url": "https://chat.rausku.com/downloads/ircord-server-linux-arm64.tar.gz",
+        "sha256": "replace-with-real-server-sha256"
+      }
+    }
+  }
+}
